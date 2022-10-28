@@ -86,6 +86,10 @@ textarea {
   background-color: white;
 }
 
+input, select {
+  background-color: white;
+}
+
 input.recebe {
   width: 300px;
 }
