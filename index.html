@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" href= "style.css">
+    <script src= "script.js"></script>
+    <title>Mensagens escondidas</title>
+</head>
+<body>
+    <header class= "cabeca">
+        <h1>Mensagem Oculta</h1>
+        <p>Cifra de César & Base 64</p>
+    </header>
+    <main>
+            <fieldset class= "form">
+                <div class= "opcoes">
+                    <label for= "texto">Digite uma mensagem</label> 
+                    <input type= "text" name= "texto" class= "recebe" required >   
+                </div>
+                <div class="divChave">
+                    <label for= "number">Digite o incremento</label>
+                    <input type= "number" min="0" name= "number" class= "rotacao" required> 
+                </div>
+                <div class="opcoes">
+                    <label for="cod">Escolha um algoritmo</label>
+                    <select id="codigo" name= "opcaolist" form= "opcaoform" onclick="codigoAdd()">
+                        <option value="selecione" disabled selected>Selecione</option>
+                        <option value= "cifra" id= "cifrar">Cifra de César</option>
+                        <option value= "base" id= "basemeia">Base64</option>
+                    </select>
+                </div>
+                <div class= "opcoes">
+                    <label><input type= "radio" name="codificar" class= "codificar" value= "codificar" onclick="cod()"> Codificar</label>
+                    <label><input type= "radio" name="codificar" class= "decodificar" value= "decodificar" onclick="decod()"> Decodificar</label>
+                </div>
+               
+                <div class= "botao">
+                    <button type="submit" onclick= "btn()"></button>
+                </div>
+                <div class= "result">
+                    <textarea class="resultado" disabled cols="40" rows="5" ></textarea>
+                </div>
+            </fieldset>
+    </main>
+
+    <footer class="fute">Desenvolvido por Nilton de Maria</footer>
+</body>
+</html>

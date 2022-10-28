@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-image: url("img/fundo.jpg"); 
+  background-size: cover;
+}
+
+
+a {
+  text-decoration: none;
+  color: rgb(80, 2, 73);
+  font-size: 30px;
+}
+
+/*cabeçalho*/
+.cabeca {
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(to right, red , blue);
+  padding-top: 7px;
+  padding-bottom: 10px;
+}
+
+/*Main*/
+main {
+  height: 90vh;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: sans-serif, arial;
+}
+
+.form {
+  background-image: linear-gradient(to right, red , blue);
+  padding: 10px;
+}
+
+.opcoes {
+  padding: 20px;
+}
+
+.divChave {
+  padding: 20px;
+  display: none;
+}
+
+button {
+  border: 0.5;
+  border-left: 0;
+  border-right: 0;
+  border-top-color: white;
+  border-bottom-color: white ;
+  padding: 5px;
+  width: 100px;
+  height: 50px;
+  display: inline-block;
+  margin-left: 40%;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight:bold;
+  background-color: blue;
+  color:white;
+
+}
+
+button:hover {
+  background-color: red;
+}
+
+.result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+textarea {
+  background-color: white;
+}
+
+input, select {
+  background-color: white;
+}
+
+input.recebe {
+  width: 300px;
+}
+
+input.rotacao {
+  width: 50px;
+}
+
+@media (max-widht: 600px) {
+  main{
+    padding: 50px;
+  }
+}
+
+/*footer*/
+.fute {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-image: linear-gradient(to right, red , blue);
+  font-family: sans-serif, arial;
+}
+
